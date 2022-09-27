@@ -3,3 +3,18 @@
     top: 0;
     padding: 30px;
 }
+
+.cart p{
+     background-color: azure;
+     font-size: 20px;
+     font-weight: 700;
+     border-radius: 5px;
+     padding: 10px;
+     
+}
+.cart h3{
+    background-color: rgb(0, 255, 255);
+    font-weight: 700;
+     border-radius: 5px;
+     padding: 10px;
+}
