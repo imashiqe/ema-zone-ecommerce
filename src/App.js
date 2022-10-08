@@ -1,15 +1,20 @@
 // import logo from './logo.svg';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Header/Footer/Footer';
-import Header from './components/Header/Header';
-import Shop from './components/Header/Shop/Shop';
+import Main from './layouts/Main';
+
+
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main></Main>
+    }
+  ])
   return (
     <div >
-      <Header></Header>
-      <Shop></Shop>
-      <Footer></Footer>
+       <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
