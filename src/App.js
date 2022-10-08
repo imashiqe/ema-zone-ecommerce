@@ -2,6 +2,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
+import Error404 from './components/Error404/Error404';
 import Inventory from './components/Inventory/Inventory';
 import Orders from './components/Order/Orders';
 import Shop from './components/Shop/Shop';
@@ -32,6 +33,10 @@ function App() {
     {
       path: 'about',
       element:<About></About>
+    },
+    {
+      path: '*',
+      element: <Error404></Error404>
     }
   ])
   return (
