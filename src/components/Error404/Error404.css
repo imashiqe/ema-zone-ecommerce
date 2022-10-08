@@ -9,3 +9,6 @@
     font-weight: 700;
     
 }
+.error-container p{
+    color: darkred;
+}
