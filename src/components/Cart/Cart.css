@@ -18,3 +18,16 @@
      border-radius: 5px;
      padding: 10px;
 }
+
+.clearcart{
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #FF3030;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}

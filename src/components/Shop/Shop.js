@@ -1,14 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { addToDb, getStoredCart } from '../../utilities/fakedb';
+import { addToDb, deleteShoppingCart, getStoredCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash} from '@fortawesome/free-solid-svg-icons';
 import './Shop.css';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Shop = () => {
     const products = useLoaderData();
     // const [products,setProducts ] = useState([]);
     const [cart,setCart] = useState([]);
+
+    const clearCart = () => {
+        setCart([]);
+        deleteShoppingCart();
+    }
 
     // useEffect( () => {
     //     console.log('Products load before fetch')
@@ -73,7 +80,12 @@ const Shop = () => {
          }
          </div>
          <div className="cart-container">
-              <Cart cart={cart}></Cart>
+              <Cart clearCart={clearCart} cart={cart}></Cart>
+              <Link to="/orders">
+                <button className='revorder'>Review Order
+                <FontAwesomeIcon to={faTrash}></FontAwesomeIcon>
+                </button>
+              </Link>
          </div>
         </div>
     );
