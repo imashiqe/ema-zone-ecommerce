@@ -1,14 +1,15 @@
 .error-container{
     text-align: center;
-    padding-top: 30%;
+    
    
 
 }
 .error-container h2{
     font-size: 40px;
     font-weight: 700;
+    padding-top: 20%;
     
 }
-.error-container p{
-    color: darkred;
+.t4{
+    color: darkorange;
 }
