@@ -15,5 +15,7 @@ AUTH SETUP
 2. create AuthContext
 3. set AuthContext.provider
 4. Make Sure you set the children
-5. 
+5. export AuthContext to be inside useContext hook
+6. get form data
+7. getAuth in the UserContext
 */
