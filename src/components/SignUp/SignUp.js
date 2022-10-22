@@ -3,7 +3,7 @@ import './SignUp.css';
 const SignUp = () => {
     return (
         <div>
-            <h3>This is  Register page</h3>
+            <h3>This is  Register </h3>
         </div>
     );
 };
