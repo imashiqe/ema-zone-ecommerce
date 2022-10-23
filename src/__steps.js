@@ -19,3 +19,18 @@ AUTH SETUP
 6. get form data
 7. getAuth in the UserContext
 */
+
+/*
+Firebase Hosting 
+-------------------
+// one time for each computer
+1.npm install -g firebase-tools
+2. firebase login
+
+// for each  project one time
+3. firebase init
+Make Sure: for  public  directory : you select: build
+single page application y
+4. npm run build 
+5. firebase deploy
+*/
