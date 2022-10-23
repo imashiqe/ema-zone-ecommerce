@@ -1,10 +1,15 @@
-import React, { Children, useContext } from 'react';
+import React, {  useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../contexts/UserContext';
 
-const PrivateRoutes = () => {
-    const {user} = useContext(AuthContext);
+const PrivateRoutes = ({Children}) => {
+    const {user, loading} = useContext(AuthContext);
     const location = useLocation();
+
+     if(loading){
+        return <div>Loading...</div>
+     }
+
      if(user && user.uid){
         return Children;
      }
