@@ -22,3 +22,8 @@
     color: orange;
     transition: all liner 3s;
 }
+
+.btn-logout{
+    margin-left: 10px;
+    
+}
