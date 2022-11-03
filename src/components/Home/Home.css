@@ -1,0 +1,50 @@
+.home-container{
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    padding-left:150px;
+
+}
+.home-img img{
+    border-radius: 10px;
+    
+}
+.home-img{
+    padding-left: 50px;
+}
+.home-text h2{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 72px;
+/* identical to box height */
+
+letter-spacing: -0.015em;
+
+color: #1C2B35;
+}
+
+.home-text p{
+    
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+letter-spacing: 0.0025em;
+
+color: #2A414F;
+
+}
+
+.home-btn{
+    width: 203px;
+    height: 56px;
+    background: #FF9900;
+    border-radius: 4px;
+   
+    cursor: pointer;
+}
